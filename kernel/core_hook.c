@@ -209,7 +209,7 @@ int ksu_handle_prctl(int option, unsigned long arg2, unsigned long arg3,
 {
 	// if success, we modify the arg5 as result!
 	u32 *result = (u32 *)arg5;
-	u32 reply_ok = KERNEL_SU_OPTION;
+	u32 reply_ok = REPLY_OK;
 
 	if (KERNEL_SU_OPTION != option) {
 		return 0;
